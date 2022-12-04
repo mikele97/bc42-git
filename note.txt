@@ -5,3 +5,5 @@
   + git add . : thêm toàn bộ file bị thay đổi
 
 - git commit -m "text": xác nhận và lưu trữ các file đã thay đổi
+
+-git log: xem lại lịch sử commit
