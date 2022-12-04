@@ -18,3 +18,7 @@
 -git push: đẩy tất cả commit lên trên remote reponsitory
 
 - git clone: tải remote reponsitory về máy tính
+
+- git checkout: chuyển sang 1 branch khác
+    + git checkout branch-name: chuyển brand
+    + git check out -b branch-naem: tạo branch
