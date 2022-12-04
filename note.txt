@@ -15,10 +15,25 @@
 
 -git status: xem trạng thái hiện tại của thư mục làm việc , nó sẽ hiển thị những file thay đổi so với những lần commit trước đó. Đồng thời hiển thị trạng thái của các file trước đó như là đã được xác nhận để commit hay chưa
 
--git push: đẩy tất cả commit lên trên remote reponsitory
+-git push: đẩy tất cả commit của 1 brand twf local responsitory lên trên remote reponsitory
 
 - git clone: tải remote reponsitory về máy tính
 
 - git checkout: chuyển sang 1 branch khác
     + git checkout branch-name: chuyển brand
     + git check out -b branch-naem: tạo branch
+
+- git pull: kéo những commit mới nhất của 1 brand từ remote  responsitory về local responsiroty
+
+- git merge: hợp nhất những commit ở 1 brand khác
+    Vd: branch hiện tại đang là feature-a, ta chạy lệnh git merge master 
+    => hợp nhất những commit của branch master vào branch feature-a  
+
+*lưu ý: quy trình xử lý khi bị conflict (feature-a tạo pull request vào master)
+B1: local - checkout về branch master
+B2: chạy lệnh git pull để cập nhật những commit mới nhất ở local
+B3: checkout về feature-a 
+B4: chạy git merge master, để hơp nhất những commit của master vào feature-a 
+B5: resolve conflict ( thực hiện ở VsCode)
+B6: git add, git commit, git push 
+B7: quay lại github để tạo pull request
